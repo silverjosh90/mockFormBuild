@@ -1,0 +1,6 @@
+---
+applications:
+  - name: mockForm
+    # command: revel run mockForm
+    buildpack: null_buildpack
+    # host: myForm

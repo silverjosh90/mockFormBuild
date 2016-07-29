@@ -1,0 +1,23 @@
+{{set . "title" "Home"}}
+{{template "header.html" .}}
+
+<header class="jumbotron">
+  <div class="container" >
+    <div class="row" style="background-color:#0080ff">
+      <h1 class="header">Verification Page</h1>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="span6">
+      {{template "flash.html" .}}
+    </div>
+    <div class="stuff">
+      {{template "params.html" .}}
+    </div>
+  </div>
+</div>
+
+{{template "footer.html" .}}
