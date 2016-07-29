@@ -122,7 +122,6 @@ func init() {
 //   srcPath - the path to the source directory, containing Revel and the app.
 //     If not specified (""), then a functioning Go installation is required.
 func Init(mode, importPath, srcPath string) {
-	fmt.println("in go dep")
 	// Ignore trailing slashes.
 	ImportPath = strings.TrimRight(importPath, "/")
 	SourcePath = srcPath
@@ -363,7 +362,6 @@ func addModule(name, importPath, modulePath string) {
 			TemplatePaths = append(TemplatePaths, viewsPath)
 		}
 	}
-	INFO.Print("printing on line 366")
 	INFO.Print("Loaded module ", filepath.Base(modulePath))
 
 	// Hack: There is presently no way for the testrunner module to add the
